@@ -4,7 +4,6 @@ import Navbar from '@/components/navbar';
 import ProjectShowcase from '@/components/project-showcase';
 import Sidebar from '@/components/sidebar';
 import SkillOutline from '@/components/skill-outline';
-import { Separator } from '@/components/ui/separator';
 import WorkShowcase from '@/components/work-showcase';
 
 import {
@@ -17,23 +16,13 @@ import {
 } from '@/lib/data';
 
 export default function Home() {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-
   return (
     <div className="max-w-full md:max-w-4xl mx-auto md:mt-8">
       <Navbar />
-      <div className="flex flex-col md:flex-row my-5 md:my-10 mx-4 md:mx-0 space-y-5 md:space-y-0 md:space-x-10">
-        <button
-          className="md:hidden text-left text-sm font-medium text-muted-foreground"
-          onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-        >
-          {isSidebarOpen ? 'Hide Sidebar' : 'Show Sidebar'}
-        </button>
-        <div className="w-full md:min-w-[65vh] space-y-10">
+      <div className="flex flex-col md:flex-row my-3 md:my-5 mx-4 md:mx-0 space-y-4 md:space-y-0 md:space-x-10">
+        <div className="w-full md:min-w-[65vh] space-y-5">
           <Sidebar />
-          {/* Hero */}
-          <section id="home" key="home" className="space-y-5">
-            <Separator />
+          <section id="home" key="home" className="space-y-4">
             <div className="flex flex-col sm:flex-row justify-between space-y-4 sm:space-y-0 sm:space-x-4">
               <div className="flex justify-between sm:justify-end space-x-4">
                 <div className="space-y-1">
