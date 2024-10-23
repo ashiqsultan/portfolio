@@ -13,12 +13,12 @@ export default function Sidebar() {
       </div>
       {/* Description */}
       <p className="text-sm text-muted-foreground tracking-tight">
-        👋 Hi visitor, I'm a software developer who loves building scalable and
+        {`👋 Hi visitor, I'm a software developer who loves building scalable and
         maintainable apps from scratch. When I'm not coding, I'm probably
         building side projects for fun, trying out the latest tech trends, or
         pretending to understand complex algorithms. If you're into apps that
         won't crash and projects that won't make you pull your hair out, let's
-        connect!
+        connect!`}
       </p>
       {/* Social Media Icons */}
       <div className="flex space-x-2">
