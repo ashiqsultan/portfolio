@@ -1,5 +1,5 @@
 import { marketingHeadlines } from '@/lib/data';
-import { Github, Linkedin } from 'lucide-react';
+import { Github, Linkedin, Youtube } from 'lucide-react';
 import Link from 'next/link';
 
 export default function Sidebar() {
@@ -14,19 +14,21 @@ export default function Sidebar() {
       {/* Description */}
       <p className="text-sm text-muted-foreground tracking-tight">
         {`👋 Hi visitor, I'm a software developer who loves building scalable and
-        maintainable apps from scratch. When I'm not coding, I'm probably
-        building side projects for fun, trying out the latest tech trends, or
-        pretending to understand complex algorithms. If you're into apps that
-        won't crash and projects that won't make you pull your hair out, let's
-        connect!`}
+        maintainable apps from scratch. 
+        Other than by day job I love building side projects for fun, 
+        trying out the latest tech trends. 
+        If you're into apps that won't crash and projects that won't make you pull your hair out, let's connect!`}
       </p>
       {/* Social Media Icons */}
-      <div className="flex space-x-2">
+      <div className="flex space-x-3 pt-2">
         <Link href="https://github.com/ashiqsultan">
           <Github />
         </Link>
         <Link href="https://www.linkedin.com/in/ashiq-sultan/">
           <Linkedin />
+        </Link>
+        <Link href="https://www.youtube.com/@csbeam">
+          <Youtube />
         </Link>
       </div>
     </div>

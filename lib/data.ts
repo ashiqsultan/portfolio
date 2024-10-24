@@ -90,6 +90,7 @@ export interface Project {
   title: string;
   description: string;
   link: string;
+  videoId?: string;
 }
 
 export const projects: Project[] = [
@@ -98,18 +99,21 @@ export const projects: Project[] = [
     description:
       'This project demonstrates the use of Retrieval-Augmented Generation (RAG) with a large language model (LLM). OpenAI APIs are used for LLM and Embedding while MongoDB for Vector Search',
     link: 'https://github.com/ashiqsultan/llm-bot',
+    videoId: 'nSLI-dQPkOQ',
   },
   {
     title: 'WhatsApp AI Bot (Health Lingo) 2024',
     description:
       'Won 1st in an AI Hackathon. Built an AI WhatsApp bot using Twilio API and OpenAI GPT4o which helps communication between doctors and patients',
     link: 'https://github.com/ashiqsultan/twilio-whatsapp-ai-bot',
+    videoId: '5pdg0Vm-4X8',
   },
   {
     title: 'Real-time Location tracking with SocketIO and MongoDB',
     description:
       'A local delivery service app with real-time location tracking built using MongoDB Change Streams and Socket IO',
     link: 'https://www.mongodb.com/developer/languages/javascript/real-time-tracking-change-streams-socketio/',
+    videoId: 'Ydi60M4MrHc',
   },
 ];
 
@@ -150,10 +154,7 @@ export const workExperiences: WorkExperience[] = [
 
 export const aboutYou = {
   name: 'Ashiq',
-  description: `
-  👋 Hi visitor,\n
-  I'm a software developer who loves building scalable and maintainable apps from scratch (because who doesn't enjoy a good challenge, right?). When I'm not coding, I’m probably building side projects for fun, trying out the latest tech trends, or pretending to understand complex algorithms. If you're into apps that won't crash and projects that won’t make you pull your hair out, let's connect!
-  `,
+  description: '',
   yearsOfExperience: `${calculateExperience(2017)} yrs`,
   location: 'Chennai, TamilNadu',
   email: 'ashiqsultan@gmail.com',

@@ -1,5 +1,4 @@
 'use client';
-import { useState } from 'react';
 import Navbar from '@/components/navbar';
 import ProjectShowcase from '@/components/project-showcase';
 import Sidebar from '@/components/sidebar';
